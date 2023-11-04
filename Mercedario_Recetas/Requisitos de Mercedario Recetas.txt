@@ -1,6 +1,6 @@
 Requisitos Funcionales:
-R-001 El usuario debe ingresar al sistema con un usuario y contraseña. 
-R-002 El administrador debe tener la capacidad de acceder a la pantalla de recetas y acceder a lista de los ingredientes disponibles para su receta
+R-001 El usuario debe ingresar al sistema con un usuario y contraseña.
+R-002 El usuario debe poder registrarse en sistema. 
 R-003 El usuario debe poder ver un listado de las recetas registradas 
 R-004 El usuario debe poder ver el listado de ingredientes utilizados en el restaurante.
 R-005 Cada ingrediente debe incluir: nombre, unidad, valor por unidad, sitio de compra y calorias que aporta.
@@ -8,15 +8,18 @@ R-006 Una receta contiene: nombre, tiempo de preparacion en horas, cantidad de p
 R-007 El usuario puede consultar la preparacion de la receta. 
 R-008 El usuario puede planear su preparacion en funcion a un numero especifico de personas 
 	- El sistema debe preguntar por la cantidad de personas a servir y enseñara: la cantidad de calorias 	por porcion, costo de los ingredientes, cantidad de ingredientes proporcional a la cantidad de 	personas y descripcion detallada de su preparacion 
-R-009 El sistema debe garantizar la identidad de los usuarios que ingresan a realizar operaciones en el sistema. 
-R-010 Al ver la lista de los ingredientes el administrador y el distribuidor debe poder: 
+R-009 El sistema debe verificar el rango (Administrador, chef o comun) de los usuarios que ingresan a realizar operaciones en el sistema. 
+R-010 Al ver la lista de los ingredientes el chef debe poder: 
 	- Editar, agregar o borrar cualquier ingrediente. 
-R-011 Al poder ver la lista de recetas el administrador y el chef debe poder: 
+R-011 Al poder ver la lista de recetas el chef debe poder: 
 	- Editar, agregar o eliminar cualquier receta. 
-R-012 Solo los usuarios con permisos tienen la capacidad de editar los datos en sistema. 
+R-012 El administrador puede entrar a un menu con el listado de los usuarios registrados en sistema y sus permisos.
+R-013 El usuario puede mandar una solicitud al administrador para obtener permisos.
+R-014 El administrador puede agregar y eliminar permisos de los usuarios.
 
 Requisitos no funcionales:
-- Permitir al sistema ordenes especiales en caso del cliente pedir por la ausencia o reemplazo de un ingrediente
-- El sistema también mostraría el coste al cliente por el plato servido, este coste vendría dado por el administrador
-- El sistema debería avisar en caso de ausencia de un ingrediente en el restaurante
 - El sistema debe estar altamente disponible de lunes a viernes entre las 7am. y 8pm.
+- El sistema debe garantizar la identidad del usuario que ingrese a realizar operaciones en sistema.
+- El sistema debe garantizar confidencialidad de los datos transmitidos desde las maquinas clientes y el servidor.
+- Se deben procesar entre 30 y 100 operaciones por minuto.
+- Todas las operaciones deben ser exitosas.
