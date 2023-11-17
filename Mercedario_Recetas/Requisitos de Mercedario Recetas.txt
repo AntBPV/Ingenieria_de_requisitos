@@ -22,4 +22,5 @@ Requisitos no funcionales:
 - El sistema debe garantizar la identidad del usuario que ingrese a realizar operaciones en sistema.
 - El sistema debe garantizar confidencialidad de los datos transmitidos desde las maquinas clientes y el servidor.
 - Se deben procesar entre 30 y 100 operaciones por minuto.
-- Todas las operaciones deben ser exitosas.
+- El programa tiene que ser utilizable por cualquier usuario tras una hora de capacitacion.
+- La informacion de la base de datos debe lograr ser rapidamente editada cuando se indique la accion deseada
